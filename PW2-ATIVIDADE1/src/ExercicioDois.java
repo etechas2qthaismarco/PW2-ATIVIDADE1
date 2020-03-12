@@ -1,18 +1,21 @@
 
 public class ExercicioDois {
 	public static boolean possoIrBanco(String diaSemana, int horaValida) {
+		
+		return ExercicioUm.ehDiaSemana(diaSemana) && 
+				horaValida >= 10 && horaValida <= 16;
 
-		if (diaSemana.equalsIgnoreCase("Sabado") || diaSemana.equalsIgnoreCase("Domingo")) {
+//		if (diaSemana.equalsIgnoreCase("Sabado") || diaSemana.equalsIgnoreCase("Domingo")) {
 
-			return false;
+//			return false;
 
-		} else if (horaValida < 10 || horaValida > 16) {
+//		} else if (horaValida < 10 || horaValida > 16) {
 
-			return false;
+//			return false;
 
-		}
+//		}
 
-		return true;
+//		return true;
 	}
 
 	public static void main(String[] args) {

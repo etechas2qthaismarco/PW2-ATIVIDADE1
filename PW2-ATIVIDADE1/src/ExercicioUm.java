@@ -1,7 +1,8 @@
 
 public class ExercicioUm{
 	public static boolean ehDiaSemana(String fimDeSemana)
-	{
+	{		
+//Alteração para incluir equalsIgnoreCase para não diferenciar letras maiúscula e minúsculas
 		if (fimDeSemana.equalsIgnoreCase("Sábado") || fimDeSemana.equalsIgnoreCase("Domingo")) {
 			return false;			
 		}
